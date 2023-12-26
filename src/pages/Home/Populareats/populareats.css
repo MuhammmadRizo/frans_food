@@ -1,0 +1,24 @@
+.popular__eats-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px 0 60px;
+  align-items: center;
+}
+
+.popular__eats-title h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.showAll {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 2px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+}
