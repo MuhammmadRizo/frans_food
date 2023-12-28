@@ -1,0 +1,13 @@
+.cola__section {
+  text-align: start;
+  margin: 30px 10px 0 10px;
+  border-radius: 10px;
+  padding: 30px 50px 30px 50px;
+  display: flex;
+  border: 1px solid #000;
+}
+
+.cola__section img {
+  width: 350px;
+  border: 1px solid #000;
+}

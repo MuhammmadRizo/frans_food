@@ -1,8 +1,4 @@
 import React from "react";
-// import UZ from "../../../assets/flag-uzb.png";
-import { US } from "country-flag-icons/react/3x2";
-// import RU from "../../../assets/flag-rus.png";
-// import EN from "../../../assets/flag-eng.png";
 import {
   FaLocationDot,
   FaPhone,

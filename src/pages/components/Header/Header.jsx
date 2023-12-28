@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../../assets/logo.png";
 import Heart from "../../../assets/heart.png";
 import Bag from "../../../assets/shopping-bag.png";
+import { NavLink } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
@@ -9,7 +10,7 @@ const Header = () => {
     <div className="header__section">
       <header>
         <div className="logo">
-          <a href="#logo">
+          <a href="/">
             <img src={Logo} alt="logo" />
             <h4>
               <span>FRANSUZ </span>FOODS
@@ -20,19 +21,29 @@ const Header = () => {
         <div className="header__links">
           <ul>
             <li>
-              <a href="#home">Bosh Sahifa</a>
+              <NavLink to="/">
+                <a href="#home">Bosh Sahifa</a>
+              </NavLink>
             </li>
             <li>
-              <a href="#about">Biz Haqimizda </a>
+              <NavLink to="/about">
+                <a href="#about">Biz Haqimizda </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#faq">Savollar</a>
+              <NavLink to="/faq">
+                <a href="#faq">Savollar</a>
+              </NavLink>
             </li>
             <li>
-              <a href="#workers">Ishchilar</a>
+              <NavLink to="/workers">
+                <a href="#workers">Ishchilar</a>
+              </NavLink>
             </li>
             <li>
-              <a href="#delivery">Yetkazib berish</a>
+              <NavLink to="/deliver">
+                <a href="#delivery">Yetkazib berish</a>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -40,7 +51,7 @@ const Header = () => {
         <div className="end__buttons">
           <form action="">
             <button className="phoneNumber" type="submit">
-              +998916233091
+              +998 (91) 623 30 91
             </button>
 
             <button className="delivery" type="submit">
