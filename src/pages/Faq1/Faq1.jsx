@@ -46,6 +46,7 @@ const Faq1 = () => {
   return (
     <div>
       <Header />
+
       <div className="faq__section">
         <h1>Ko’p beriladigan savollar</h1>
 

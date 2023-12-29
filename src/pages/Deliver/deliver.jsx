@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
+import axios from "axios";
 
-const deliver = () => {
+const Deliver = () => {
   return (
     <div>
       <Header />
-      <h1>Deliver</h1>
     </div>
   );
 };
 
-export default deliver;
+export default Deliver;

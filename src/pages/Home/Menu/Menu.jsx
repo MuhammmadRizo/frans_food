@@ -33,7 +33,7 @@ const Menu = () => {
           </div>
 
           <div className="cart__item-about">
-            <a href="idn" className="cart-item">
+            <a href="/pizza" className="cart-item">
               <h3>Coca-Cola 1.5 litr</h3>
               <div className="cart__item-price">
                 <p>25 000 so’m</p>
@@ -70,7 +70,7 @@ const Menu = () => {
           </div>
 
           <div className="cart__item-about">
-            <a href="idn" className="cart-item">
+            <a href="/burger" className="cart-item">
               <h3>American Burger</h3>
               <div className="cart__item-price">
                 <p>25 000 so’m</p>
@@ -106,7 +106,7 @@ const Menu = () => {
           </div>
 
           <div className="cart__item-about">
-            <a href="idn" className="cart-item">
+            <a href="/steak" className="cart-item">
               <h3>American Steak</h3>
               <div className="cart__item-price">
                 <p>25 000 so’m</p>
@@ -142,7 +142,7 @@ const Menu = () => {
           </div>
 
           <div className="cart__item-about">
-            <a href="idn" className="cart-item">
+            <a href="/shourma" className="cart-item">
               <h3>Shourma</h3>
               <div className="cart__item-price">
                 <p>25 000 so’m</p>
@@ -178,7 +178,7 @@ const Menu = () => {
           </div>
 
           <div className="cart__item-about">
-            <a href="idn" className="cart-item">
+            <a href="/ipizza" className="cart-item">
               <h3
                 style={{
                   overflow: "hidden",
@@ -224,7 +224,7 @@ const Menu = () => {
           </div>
 
           <div className="cart__item-about">
-            <a href="idn" className="cart-item">
+            <a href="/coca-cola" className="cart-item">
               <h3>Coca-Cola 1.5 litr</h3>
               <div className="cart__item-price">
                 <p>25 000 so’m</p>
@@ -261,7 +261,7 @@ const Menu = () => {
           </div>
 
           <div className="cart__item-about">
-            <a href="idn" className="cart-item">
+            <a href="/burger" className="cart-item">
               <h3>American Burger</h3>
               <div className="cart__item-price">
                 <p>25 000 so’m</p>
@@ -297,7 +297,7 @@ const Menu = () => {
           </div>
 
           <div className="cart__item-about">
-            <a href="idn" className="cart-item">
+            <a href="/steak" className="cart-item">
               <h3>American Steak</h3>
               <div className="cart__item-price">
                 <p>25 000 so’m</p>
@@ -333,7 +333,7 @@ const Menu = () => {
           </div>
 
           <div className="cart__item-about">
-            <a href="idn" className="cart-item">
+            <a href="/shourma" className="cart-item">
               <h3>Shourma</h3>
               <div className="cart__item-price">
                 <p>25 000 so’m</p>
@@ -369,7 +369,7 @@ const Menu = () => {
           </div>
 
           <div className="cart__item-about">
-            <a href="idn" className="cart-item">
+            <a href="/ipizza" className="cart-item">
               <h3
                 style={{
                   overflow: "hidden",

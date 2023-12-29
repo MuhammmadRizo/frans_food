@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../../assets/logo.png";
 import Heart from "../../../assets/heart.png";
 import Bag from "../../../assets/shopping-bag.png";
@@ -6,6 +6,10 @@ import { NavLink } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
   return (
     <div className="header__section">
       <header>
@@ -67,6 +71,25 @@ const Header = () => {
               <img src={Bag} alt="Savat" />
               <p className="addNum">0</p>
             </a>
+          </div>
+          <div className="hamburger-menu">
+            <div
+              className={`menu-icon ${isMenuOpen ? "open" : ""}`}
+              onClick={toggleMenu}
+            >
+              <div className="bar1"></div>
+              <div className="bar2"></div>
+              <div className="bar3"></div>
+            </div>
+
+            {isMenuOpen && (
+              <div className="menu">
+                {/* Your menu items go here */}
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+              </div>
+            )}
           </div>
         </div>
       </header>

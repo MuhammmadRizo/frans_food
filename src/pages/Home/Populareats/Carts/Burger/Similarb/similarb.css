@@ -1,0 +1,212 @@
+.similarb__section {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.similarb__items a {
+  text-decoration: none;
+}
+
+.similarb__item-image {
+  /* border-bottom: 1px solid #000; */
+  position: relative;
+}
+
+.similarb__item-image img {
+  width: 100px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.similarb__items {
+  border: 1px solid #000;
+  background: #fff;
+  width: 215px;
+}
+
+.similarb__items:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.similarb__item-about a h3 {
+  text-align: start;
+  margin: 0;
+  padding: 10px 0 0 15px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.similarb__item-price {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 15px;
+  gap: 20px;
+}
+
+.similarb__item-price p {
+  color: #f00;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.similarb__item-star {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.similarb__item-star small {
+  color: #8c8c8c;
+  font-family: Poppins;
+  padding: 2px 0 0 0;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.similarb__item-buttons form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0 10px 0;
+}
+
+.similarb__item-buttons form .similarb__item-addRemove button {
+  border: none;
+  background: #1c2c4e;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.similarb__item-buttons form .similarb__item-addRemove input {
+  width: 35px;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  height: 21px;
+  text-align: center;
+}
+
+.similarb__item-buttons .deliver {
+  cursor: pointer;
+  background: #e7484c;
+  border: none;
+  font-size: 10px;
+  /* padding: 5px 5px 5px 5px; */
+  height: 25px;
+  width: 100px;
+  color: #fff;
+}
+.similarb__section {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.similarb__items a {
+  text-decoration: none;
+}
+
+.similarb__item-image {
+  /* border-bottom: 1px solid #000; */
+  position: relative;
+}
+
+.similarb__item-image img {
+  width: 215px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.similarb__items {
+  border: 1px solid #000;
+  background: #fff;
+  width: 215px;
+}
+
+.similarb__items:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.similarb__item-about a h3 {
+  text-align: start;
+  margin: 0;
+  padding: 10px 0 0 15px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.similarb__item-price {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 15px;
+  gap: 20px;
+}
+
+.similarb__item-price p {
+  color: #f00;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.similarb__item-star {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.similarb__item-star small {
+  color: #8c8c8c;
+  font-family: Poppins;
+  padding: 2px 0 0 0;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.similarb__item-buttons form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0 10px 0;
+}
+
+.similarb__item-buttons form .similarb__item-addRemove button {
+  border: none;
+  background: #1c2c4e;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.similarb__item-buttons form .similarb__item-addRemove input {
+  width: 35px;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  height: 21px;
+  text-align: center;
+}
+
+.similarb__item-buttons .deliver {
+  cursor: pointer;
+  background: #e7484c;
+  border: none;
+  font-size: 10px;
+  /* padding: 5px 5px 5px 5px; */
+  height: 25px;
+  width: 100px;
+  color: #fff;
+}

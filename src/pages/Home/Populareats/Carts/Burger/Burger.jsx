@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "../../../../components/Header/Header";
-import Cola from "../../../../../assets/cola15.png";
-import "./cola.css";
+import Burger from "../../../../../assets/burger.png";
+import "./burger.css";
 import { FaStar } from "react-icons/fa6";
 import Map from "../../../../components/Map/Map";
 import Footer from "../../../../components/Footer/Footer";
-import Similar from "./Similar/Similar";
 import { MdArrowForwardIos } from "react-icons/md";
+import Similarb from "./Similarb/Similarb";
 
 const Coca = () => {
   return (
@@ -15,10 +15,10 @@ const Coca = () => {
 
       <div className="cola__section">
         <div className="cola">
-          <img src={Cola} alt="" />
+          <img src={Burger} alt="" />
 
           <div className="cola__about">
-            <h1>Coca-Cola 1.5 litrligi</h1>
+            <h1>American Burger</h1>
 
             <div className="cola__about-star">
               <div className="cola__star">
@@ -55,7 +55,10 @@ const Coca = () => {
         <div className="coca__about-text">
           <h1>Ma'lumotnoma</h1>
 
-          <p>Bu Coca-Cola ^_^</p>
+          <p>
+            Bu Burger siz uchun ZARAR ^_^ <br /> <br /> Burger tarkibida 3 ta
+            mol go'shti 2 ta salat bargi 5 dona pomidor hamda non bor! :)
+          </p>
         </div>
 
         <div className="more__cards">
@@ -69,7 +72,7 @@ const Coca = () => {
           </div>
 
           <div className="more__cards-card">
-            <Similar />
+            <Similarb />
           </div>
         </div>
       </div>
