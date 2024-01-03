@@ -5,11 +5,26 @@ import Bag from "../../../assets/shopping-bag.png";
 import { NavLink } from "react-router-dom";
 import "./header.css";
 
-const Header = () => {
+const Header = ({ cartQuantity }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [cart, setCart] = useState([]);
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+  const calculateTotalPrice = () => {
+    // Your logic to calculate the total price based on items in the cart
+    return cart
+      .reduce((total, item) => total + item.price * item.quantity, 0)
+      .toFixed(2);
+  };
+  const removeFromCart = (productId) => {
+    setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
+  };
+
+  const handleAlert = () => {
+    alert("Iltimos Buyurtma berish uchun mahsulot tanlang :)");
+  };
+
   return (
     <div className="header__section">
       <header>
@@ -26,27 +41,27 @@ const Header = () => {
           <ul>
             <li>
               <NavLink to="/">
-                <a href="#home">Bosh Sahifa</a>
+                <a href="/">Bosh Sahifa</a>
               </NavLink>
             </li>
             <li>
               <NavLink to="/about">
-                <a href="#about">Biz Haqimizda </a>
+                <a href="/about">Biz Haqimizda </a>
               </NavLink>
             </li>
             <li>
               <NavLink to="/faq">
-                <a href="#faq">Savollar</a>
+                <a href="/faq">Savollar</a>
               </NavLink>
             </li>
             <li>
               <NavLink to="/workers">
-                <a href="#workers">Ishchilar</a>
+                <a href="/workers">Ishchilar</a>
               </NavLink>
             </li>
             <li>
               <NavLink to="/deliver">
-                <a href="#delivery">Yetkazib berish</a>
+                <a href="/deliver">Yetkazib berish</a>
               </NavLink>
             </li>
           </ul>
@@ -55,19 +70,24 @@ const Header = () => {
         <div className="end__buttons">
           <form action="">
             <button className="phoneNumber" type="submit">
-              +998 (91) 623 30 91
-            </button>
-
-            <button className="delivery" type="submit">
-              Buyurtma berish
+              <a
+                href="tel:+998916233091"
+                style={{ textDecoration: "none", color: "#000" }}
+              >
+                +998 (91) 623 30 91
+              </a>
             </button>
           </form>
+
+          <button className="delivery" type="submit" onClick={handleAlert}>
+            Buyurtma berish
+          </button>
 
           <div className="header__icons">
             <a href="#heart">
               <img src={Heart} alt="yoqtirganlar" />
             </a>
-            <a href="#shop" className="shopping_bag">
+            <a href="/shopping-bag" className="shopping_bag">
               <img src={Bag} alt="Savat" />
               <p className="addNum">0</p>
             </a>

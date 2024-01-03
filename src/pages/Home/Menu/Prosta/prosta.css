@@ -1,0 +1,17 @@
+.prosta__cards {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 60px 60px 60px;
+}
+
+.prosta__cards li {
+  list-style: none;
+}
+
+.prosta__cards .card__item {
+  border: 1px solid #000;
+  width: 220px;
+  height: 350px;
+}

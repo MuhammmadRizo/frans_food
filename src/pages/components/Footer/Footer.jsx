@@ -6,6 +6,7 @@ import {
   FaTelegram,
 } from "react-icons/fa6";
 import "./footer.css";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -33,7 +34,7 @@ const Footer = () => {
             <div className="footer__about-phone">
               <FaPhone />
 
-              <a href="+998916233091">
+              <a href="tel:+998916233091">
                 <p>+998916233091</p>
               </a>
             </div>
@@ -115,15 +116,14 @@ const Footer = () => {
             </select>
           </form>
 
-          <a href="aloqa">
-            <h4>Aloqa uchun</h4>
-          </a>
-          <a href="help">
+          <a href="https://t.me/Sanjar919131">
             <h4>Yordam olish</h4>
           </a>
-          <a href="xavf">
-            <h4>Xavfsizlik qoidalari</h4>
-          </a>
+          <NavLink to="/privacy">
+            <a href="/privacy">
+              <h4>Xavfsizlik qoidalari</h4>
+            </a>
+          </NavLink>
         </div>
       </div>
 

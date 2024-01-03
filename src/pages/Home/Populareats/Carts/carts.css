@@ -15,7 +15,7 @@
 }
 
 .cart__items:hover {
-  transform: scale(1.1);
+  trans: scale(1.1);
   transition: 0.5s;
   z-index: 1;
 }
@@ -68,14 +68,14 @@
   font-weight: 400;
 }
 
-.cart__item-buttons form {
+.cart__item-buttons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 50px;
 }
 
-.cart__item-buttons form .cart__item-addRemove button {
+.cart__item-buttons .cart__item-addRemove button {
   border: none;
   background: #1c2c4e;
   color: #fff;
@@ -84,13 +84,24 @@
   cursor: pointer;
 }
 
-.cart__item-buttons form .cart__item-addRemove input {
+.cart__item-buttons .cart__item-addRemove input {
   width: 35px;
+  outline: none;
   border: none;
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
   height: 21px;
   text-align: center;
+}
+
+input::--webkit-outer-spin-button,
+input::--webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .cart__item-buttons .deliver {
